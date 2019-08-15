@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+/*cabecalho*/
+  .cabecalho{
+      background-color: #117A25;
+      color: #F2F2F2;
+      padding-top: 10px;
+      padding-bottom: 20px;
+
+  }
+  .cabecalho__titulo1{
+      font-size: 16px;
+
+  }
+  .cabecalho__titulo2{
+      font-size: 24px;
+  }
+
+  /*secções*/
+  .titulosec{
+      color: #00420C;
+      text-align: center;
+      font-size: 24px;
+  }
+  .textosec{
+
+  }
+
