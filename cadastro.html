@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <link href="assets/css/estilo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__title container">
+            Minhas
+            <span class="header__title--bgWhite">SÉRIES</span>
+        </div>
+        <nav>
+            <ul class="menu container">
+                <li class="menu__item"> <a href="#">Inicio</a> </li>
+                <li class="menu__item"> <a href="#">Séries renovadas</a> </li>
+                <li class="menu__item"> <a href="#">Séries destaque</a> </li>
+                <li class="menu__item"> <a href="#">Minhas séries</a> </li>
+                <li class="menu__item"> <a href="#">Contato</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main class="container">  
+        <form class="form">
+            <h1 class="form__title">Cadastro</h1>
+            <div class="form__div">
+              <label class="form__label" for="nome">Nome:</label><!--esse br é o mesmo que colocar a label com display block-->
+              <input type="text" class="form__campo" id="nome" required placeholder="Informe o nome"><!--required no deixa enviao sem colocar algo no form__campo, placebolder deixa um exemplo-->
+            </div>
+            <div class="form__div">
+                <label class="form__label" for="sobrenome">Sobrenome:</label><!--esse br é o mesmo que colocar a label com display block-->
+                <input type="text" class="form__campo" id="sobrenome" required placeholder="Informe o sobrenome"><!--required no deixa enviao sem colocar algo no form__campo, placebolder deixa um exemplo-->
+            </div>
+            <div class="form__div">
+              <label class="form__label" for="fone">Fone:</label>
+              <input type="text" class="form__campo" id="fone" required pattern="^[0-9]{5}-[0-9]{4}" placeholder="99999-9999"> 
+            </div>
+            
+            <div class="form__div">
+              <label class="form__label" for="idade">Idade:</label>
+              <input type="number" class="form__campo" id="idade" required min="0" max="100" required > 
+            </div>
+            
+            <div class="form__div">
+              <label  class="form__label" for="">Sexo:</label>
+              <input type="radio" id="sexo-masc" name="sexo">
+              <label for="sexo-masc" class="form__item">masculino</label>
+              <input type="radio" id="sexo-fem" name="sexo" checked><!--checked deixa como padrão selecionado-->
+              <label for="sexo-fem " class="form__item">feminino</label>
+            </div>
+            
+            <div class="form__div">
+              <input type="checkbox" id="email" checked>
+              <label for="email" class="form__item">Deseja receber email?</label>
+            </div>
+        
+            <div class="form__div">
+              <label  class="form__label"  for="estados">Estados:</label>
+              <select class="form__estados"  id="estados">
+                <option   value="RO">RO</option>
+                <option   value="MT">MT</option>
+                <option   value="AC">AC</option>
+                <option   value="MS">MS</option>
+              </select>
+            </div>
+        
+            <div class="form__div" style="display: flex"><!--css inline, escrever um codigo direto no item-->
+              <label  class="form__label" for="obs">Observações:</label>
+              <textarea class="form__observ form__item" id="obs" cols="30" rows="10"></textarea><!-- area de texto-->
+            </div>
+            <div style="display: flex">
+                <div class="form__div">
+                    <input type="submit" class="form__btn" value="Cadastrar"><!--botao-->
+                </div>
+                <div class="form__div">
+                    <input type="submit" class="form__btn" value="Cancelar"><!--botao-->
+                </div>
+            </div>
+            
+        </form>
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer__element container">
+            Receba as Novidades
+        </div>
+
+        <div class="footer__element container">
+            <div>Nos Siga Nas Redes Sociais</div> 
+            <div>
+                <img class="footer__image" src="assets/images/facebook.svg" alt="icone facebook">
+                <img class="footer__image" src="assets/images/twitter.svg" alt="icone twitter">
+                <img class="footer__image" src="assets/images/youtube.svg" alt="icone youtube">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -65,6 +65,11 @@
             
         }
     }
+    @media(max-width:600px){
+        .menu{
+            display: none;
+        }
+    }
 
     .menu__item >a{
         padding: 20px;
@@ -249,4 +254,74 @@
 .serieinfo{
 
 
+}
+
+
+/*cadastro-----------------------------*/
+.form{
+    margin: 0 auto;
+}
+.form__title{
+    color: #C0392B;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+.form__div{
+    margin: 15px 0px;
+
+}
+@media(max-width: 600px){
+    .form__div{
+        margin:10px; 
+    }
+}
+
+.form__label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #C0392B;
+    display: inline-block;
+    width: 150px;
+}
+.form__campo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px #C0392B solid;
+}
+
+.form__observ{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px #C0392B solid;
+    width: 500px;
+}
+
+.form__estados{
+    font-family: 'Roboto', sans-serif;
+    min-width: 150px;
+    font-size: 20px;
+}
+
+
+.form__btn{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background-color: #C0392B;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    padding: 7px;
+    max-width: 328px;
+    min-width: 200px;
+    min-height: 50px;
+    font-size: 20px;
+}
+
+.form__item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
